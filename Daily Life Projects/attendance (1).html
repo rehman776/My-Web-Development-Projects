@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Baloo Bhai';
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(keybord.jpg) no-repeat center center/cover;
+    opacity: 0.89;
+}
+
+.container {
+    width: 500px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times,;
+}
+
+form button {
+    font-family: 'Baloo Bhai';
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+}
+
+form button:hover {
+    background-color: transparent;
+    color: #4CAF50;
+    transition: 0.8s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Attendance Form</h2>
+        <form id="attendanceForm">
+            <div>
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div>
+                <label for="status">Attendance Status:</label>
+                <select id="status" required>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('attendanceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const studentName = document.getElementById('studentName').value;
+    const date = document.getElementById('date').value;
+    const status = document.getElementById('status').value;
+
+    console.log(`Student Name: ${studentName}, Date: ${date}, Status: ${status}`);
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boycott Israeli Products</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            color: #555;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .marquee {
+            background-color: #00539F;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .marquee a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-container input {
+            padding: 12px;
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-container input:focus {
+            border-color: #00539F;
+            outline: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #00539F;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        td {
+            font-size: 16px;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Boycott Israeli Products</h1>
+        </div>
+        
+        <div class="marquee">
+            <marquee>If any product is missing in the list, please <a href="#contact">contact us</a> so we can add it. Thank you!</marquee>
+        </div>
+
+        <div class="input-container">
+            <input type="text" placeholder="Search for alternative products..." id="myInput" onkeyup="searchProducts()">
+        </div>
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>PRODUCTS</th>
+                    <th>Israeli Brand</th>
+                    <th>Alternative Brand</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr><th>Kitchen:Cooking Oil & Ghee</th><td>Rafhan</td><td>Sufi/Kisan/Meezan/Andaaz Habib/ Soya Supreme/ Barkat</td></tr>
+<tr><th>Sauces, Syrup</th><td>Knorr/ Hershey's</td><td>National/Youngs/ Mehran/Dipitt/ Bake Parlor/Sundip/ Salman's</td></tr>
+<tr><th>Spices</th><td>Knorr</td><td>National/ Shan/ Mehran</td></tr>
+<tr><th>Baking Items</th><td>Rafhan</td><td>Rossmorr/ Mother Choice</td></tr>
+<tr><th>Desserts</th><td>Rafhan</td><td>National/ Happy Home/ Fauji/Bake parlor/ Kolson/ Laziza/ Mehran</td></tr>
+<tr><th>Tea,Cofee</th><td>Lipton/ Nescafe</td><td>Tapal/Vital/Islamabad Tea</td></tr>
+<tr><th>Spreads, Pickle</th><td>Knorr/Nutella/ Peanut Butter</td><td>Young's/ National/ Nature's Hom</td></tr>
+<tr><th>Frozen Items</th><td>N/A</td><td>Sabroso/Dawn/PK/ Menu/ Kababjees/ K&N'S/ National</td></tr>
+<tr><th>Jam/Jelly</th><td>Knorr/Ragu</td><td>Bake palor/ Kolson/ Crispo</td></tr>
+<tr><th>Noodles</th><td>Maggi/Knorr/Blazin</td><td>Shan</td></tr>
+<tr><th>Cerelac</th><td>Nestle</td><td>Searle/Cow & Gate</td></tr>
+<tr><th>Fruit cans</th><td>Italia/Del Monte</td><td>Melapine/Polac</td></tr>
+<tr><th>Bread,Rusk</th><td>Modern/ Britannia</td><td>Dawn/ Bhashani/ Bake palor/ Hilal</td></tr>
+<tr><th>Dairy Products:Cheese</th><td>Kraft/ Puck/ Anchor/ happy Cow/ President/ Arla/ castello/ KDD/ Tre stelie/ Philadelphia</td><td>Adam's/ Deen's/ Almarai/ Fresh Pure/ Khadam/ Neeli bar/ Nurpur/ Peak Fresh/ Day fresh</td></tr>
+<tr><th>Powder & liquid Milk</th><td>Nido/Everyday/Nestle Milk pack/ Abott</td><td>Olpers/Nurpur/Good milk/ Millac/Haleeb/Adam's/Anhaar/ Day fresh</td></tr>
+<tr><th>Butter/Margerine</th><td>Nestle/ Blue band/Lurpak/ Kraft/ Flora/ Anchor/ American Garden/ Meadowlea/ Olive Grow</td><td>Nurpur/ Mumtaz/ Almarai/Dawn/ Deen's/ Fresh Pure/ Neeli bar/ Newtown/ Haleeb/ Dawn/Adam's Khadam/ Achha Butter/ Millac/ Nawa</td></tr>
+<tr><th>Food Suppliments</th><td>Glucerna/Ensure/ Glucose-D/Complan</td><td>Nutrifactor</td></tr>
+<tr><th>House Hold Items:Tissue</th><td>Fay</td><td>Rose Petal/ Hankies</td></tr>
+<tr><th>Aluminium foil, Paper wrap</th><td>N/A</td><td>Diamond/ Mepro/ Fresh/ Wraptastic/Sanitary Cling film</td></tr>
+<tr><th>Batteries</th><td>N/A</td><td>Osaka/ Excide/ Phoenix/Atlas/ National</td></tr>
+<tr><th>Insect Killer</th><td>Mortein/ Power Plus</td><td>Kingtox/ Tyfon</td></tr>
+<tr><th>Shoe Polish</th><td>KIWI/ Cherry Blossom</td><td>WBM Shoe Care</td></tr>
+<tr><th>Snacks:Ice cream</th><td>Wall's/ Omore</td><td>Hico/ United King/ Rehmat e Sheeren/ Zam Zam</td></tr>
+<tr><th>Biscuits</th><td>LU/Oreo/ Kinder Joy</td><td>Bisconni/Rite/Peak freans/English/ Hilal/Mayfair/Whistles/ Cafe/ Innovative</td></tr>
+<tr><th>Chocolates</th><td>Cadbury/ Nestle/ Hershey's/ Mars/</td><td>Now/Paradise/Sonnet/You/Novella Cloud 9</td></tr>
+<tr><th>Chips</th><td>Cheetos/Lays/Pringles/ Kurkure</td><td>Super crisp/ Oye hoey/Chipsino by United King/ Kurleez/ Kolson</td></tr>
+<tr><th>Cakes</th><td>N/A</td><td>Hilal/ Cup cakes/ Bisconni/ Bake</td></tr>
+<tr><th>Candies</th><td>Cadbury/Naestle/ Mentos</td><td>Hilal/Candyland/Mayfair.parler/dawn</td></tr>
+<tr><th>Juices</th><td>Nestle fruita Vital/Tang/ Slice/Energile/ 
+Shezan</td><td>Popular/Tropico/Fruitien/Maza/Sunsip</td></tr>
+<tr><th>Flavoured Milk</th><td>Milo/nescafe</td><td>Olpers/ Day fresh</td></tr>
+<tr><th>Drinks,Sharbat</th><td>Pepsi/ Coca cola/Sprite/ 7 Up/ Aquafina/ Dasani/ Red bull/Mountain Dew/Sting</td><td>Quice/Rooh Afza/ Jam e sheeren/ Rango next/ Colanext/ Gourmet/ Amrat/ Pakola</td></tr>
+<tr><th>Nimcos</th><td>N/A</td><td>Shahi Nimco/ Kababjees Nimcos/ Namkeen/ Super Crisp</td></tr>
+<tr><th>Mouth freshner</th><td>N/A</td><td>Blue Ribbon/ Shahi/ Hilal</td></tr>
+<tr><th>Baby Products & Patient Diapers:Baby lotion,oil</th><td>Johnson's</td><td>Mothercare(globe cosmetic Swat pk)/Moms Touch/ Soft Touch/Nexton</td></tr>
+<tr><th>Baby powder</th><td>Johnson's</td><td>Mothercare(globe cosmetic Swat pk)/Moms Touch/ Soft Touch/Nexton</td></tr>
+<tr><th>Baby diapers</th><td>Pampers/Huggies/ Johnson's/ Cane babe</td><td>Bona papa/Touch</td></tr>
+<tr><th>Wipes,Rash Cream</th><td>Pampers/ Cane babe/ Woodward</td><td>Mothercare(globe cosmetic swat pk)/ Bonapapa</td></tr>
+<tr><th>Patient Diapers</th><td>N/A</td><td>Leo/Molfix</td></tr>
+<tr><th>Feeders & Sippers</th><td>Canebabe</td><td>Shield</td></tr>
+<tr><th>Toilteries:Soap,hand wash</th><td>Palmolive/ Dettol/ Lifebuoy/ Lux/ Safeguard</td><td>Tibet/Capri/Vital/Sufi/Care/ Hemani</td></tr>
+<tr><th>Shampoo(dry,liquid)</th><td>Sunsilk/ Dove/Pantene/ Head & Shoulders/ Tresimine/ Lifebuoy/ Vatika</td><td>Saeed Ghani/Samsol/Medicam/ Bio Amla</td></tr>
+<tr><th>Face wash</th><td>Ponds/Fair n Lovely</td><td>washes/Hemani/ Stillmans/Saeed Ghani/YC face</td></tr>
+<tr><th>Tooth paste</th><td>Close Up/ Colgate/Sensodyne/ Pepsodent</td><td>Medicam/English/Hamdard/ Miswak/ Dentonic/Forhans/</td></tr>
+<tr><th>Beauty Products:Cosmetics</th><td>Loreal/ Revlon/ Olay</td><td>Medora/ Hemani/Sweet touch/ Odho/ nabeela/ J. /Musarrat Misbah of Depilex</td></tr>
+<tr><th>Witening Creams</th><td>Fair n lovely</td><td>Tibet/Stillmans/Golden Pearl/ Nisa lovely/ Joy & Lovely</td></tr>
+<tr><th>Facials</th><td>Garnier</td><td>N/A</td></tr>
+<tr><th>Skin Care Products</th><td>Nivea/Ponds</td><td>Hemani/ Vince Care/Co-natural/ Luscious</td></tr>
+<tr><th>Lip balm</th><td>Vaseline/Lobello</td><td>Tibet Orange/Blu Seal/ Stillmans</td></tr>
+<tr><th>Deodrant & Perfumes</th><td>Denim Fragrances/ Victoria's Secret/ AXE</td><td>Hemani/J. / Saeed Ghani/ Bonanza satrangi/ Oud al Haram/ Stylo/ Khaadi</td></tr>
+<tr><th>Deodrant & Perfumes</th><td>Denim Fragrances/ Victoria's Secret/ AXE</td><td>Hemani/J. / Saeed Ghani/ Bonanza satrangi/ Oud al Haram/ Stylo/ Khaadi</td></tr>
+<tr><th>Washing Items:Liquid Dishwash</th><td>Vim/ Max/</td><td>Sufi/Saffon/Chase Up liquid dishwash</td></tr>
+<tr><th>Dishwash soap bars</th><td>Vim/ Max</td><td>Sufi/Saffon/Chase Up dishwash bars</td></tr>
+<tr><th>Washing Detergent</th><td>Bonus/ Brite/ Surf Excel/ Arial/ Rin/ Express Power/Tide</td><td>Sufi/Gaey/Karachi Surf/ Ujala</td></tr>
+<tr><th>Fabric Softener</th><td>Comfort/Downy/ Romar</td><td>N/A</td></tr>
+<tr><th>Fabric Whitener</th><td>Robin</td><td>King/ Care by Chase/ Good Bye</td></tr>
+<tr><th>Bleach</th><td>Robin</td><td>Tyfon</td></tr>
+<tr><th>Phynoile</th><td>N/A</td><td>Finis/king's</td></tr>
+<tr><th>Toilet Cleaner</th><td>Harpic/ Domel/Lysol/Clorox</td><td>Local bleach</td></tr>
+<tr><th>Sponges</th><td>Scotch Brite</td><td>Spontex</td></tr>
+<tr><th>Personal Care Items: hair oil</th><td>Parachute/ Dabur/ Vatika</td><td>Saeed Ghani/Hemani</td></tr>
+<tr><th>Hair removal Creams,wax</th><td>Veet/Gillette products</td><td>EU Cream/Olivia/Nisa/ Saeed Ghani</td></tr>
+<tr><th>Sanitary Pads</th><td>Always/Stay Free</td><td>Trust/ Butterfly/ Neatex/Spot free</td></tr>
+<tr><th>Shaving Items</th><td>Gillette</td><td>Treet/Samsol/ Tibet/ Medicam</td></tr>
+<tr><th>Body lotion,Talcum powder</th><td>enchanteur/Revlon/ Pond's</td><td>Care/ Saeed Ghani/ Tibet</td></tr>
+<tr><th>Brands:Shoes & Bags Brand</th><td>Calvin Klein/Gucci/ Adidas/ Reebok/Levis/ Amani/ Boss/ Bata/ INDURE/</td><td>Service/Walkease and stylo</td></tr>
+<tr><th>Clothes Brand</th><td>Calvin Klien</td><td>Gul Ahmed/ Khaadi/ J</td></tr>
+<tr><th>Electronics</th><td>Sony</td><td>Dawlance/ Waves/ West point</td></tr>
+<tr><th>Restaurants</th><td>Mc Donald's/ Pizza Hut/ Domino's/ KFC/ Burgerking/Hardees</td><td>nan</td></tr>
+<tr><th>Petrol Pumps</th><td>Shell/ Total Parco</td><td>PSO</td></tr>
+            </tbody>
+        </table>
+        
+        <div id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or suggestions, feel free to email us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        function searchProducts() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("productTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
