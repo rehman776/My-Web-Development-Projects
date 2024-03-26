@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* only background image ki opesty kam krny ky liye before es trhan use krty hain  */
+        header::before {
+            background: url(https://source.unsplash.com/collection/190727/1600x900)no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        section {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-family: Arial;
+        }
+
+        h1 {
+            font-family: 'Baloo Bhai';
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+            font-family: 'Baloo Bhai';
+            cursor: pointer;
+        }
+
+        li {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .itme1:hover {
+            background-color: teal;
+            border-radius: 8px;
+            transition: 0.8s;
+        }
+
+        .itme2:hover {
+            background-color: teal;
+            border-radius: 8px;
+            transition: 0.8s;
+        }
+
+        .itme3:hover {
+            background-color: teal;
+            border-radius: 8px;
+            transition: 0.8s;
+        }
+
+        .itme4:hover {
+            background-color: teal;
+            border-radius: 8px;
+            transition: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="navigation">
+                <li class="itme1">Home</li>
+                <li class="itme2">About</li>
+                <li class="itme3">Service</li>
+                <li class="itme4">Contect</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1>Wellcome to the Coding World </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim illo praesentium quam voluptate! Sint eius
+            enim quisquam illo aperiam quod nostrum. Odio nihil doloribus voluptas earum repellendus ex. Nostrum
+            corrupti modi corporis fugiat enim quisquam voluptas veniam eligendi at aspernatur.</p>
+    </section>
+</body>
+
+</html>

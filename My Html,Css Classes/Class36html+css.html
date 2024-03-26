@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframes</title>
+    <style>
+        .container {
+            display: flex;
+            text-align: center;
+            border-radius: 50px;
+            background-color: greenyellow;
+            margin-top: 10px;
+        }
+
+        .line1 {
+            position: relative;
+            color: white;
+            background-color: green;
+            width: 100px;
+            height: 50pxpx;
+            border-radius: 50px;
+            animation-name: mehar1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes mehar1 {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 800px;
+            }
+        }
+
+
+        .circle1 {
+            position: relative;
+            background-color: rgb(44, 151, 5);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            animation-name: ahmad2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            color: white;
+            margin-right: 10px;
+            z-index: 50;
+        }
+
+        @keyframes ahmad2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 300px;
+                left: 0px;
+            }
+
+            75% {
+                top: 300px;
+                left: 330px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+
+        .circle2 {
+            position: relative;
+            background-color: rgb(14, 160, 193);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            /* animation-name: ahmad3;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            text-align: center;
+            color: white;
+            margin-right: 10px;
+            margin-top: 300px;
+            right: 110px;
+        }
+
+        @keyframes ahmad3 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+
+        .circle3 {
+            position: relative;
+            background-color: rgb(14, 160, 193);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            /* animation-name: ahmad4;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            color: white;
+            margin-right: 10px;
+            margin-top: 300px;
+            display: flex;
+            left: 110px;
+            justify-content: center;
+        }
+
+        @keyframes ahmad4 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+
+        .circle4 {
+            position: relative;
+            background-color: rgb(14, 160, 193);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            /* animation-name: ahmad4;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            text-align: center;
+            color: white;
+
+        }
+
+        @keyframes ahmad4 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        .BigContainer {
+            display: flex;
+            margin-top: 10px;
+
+        }
+        .button{
+            margin-top: 50px;
+        }
+        .button input{
+            background-color: teal;
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            border-radius: 30px;
+        }
+        .button input:hover{
+            animation-name: don;
+            animation-duration: 2s;
+            
+        }
+        @keyframes don {
+            from{
+
+            }
+            to{
+                
+            }
+            
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="line1">
+        Line 1
+    </div>
+</div>
+<div class="BigContainer">
+    <div class="container1">
+        <div class="circle1">
+            Circle 1
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="circle2">
+            Circle 2
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="circle3">
+            Circle 3
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="circle4">
+            Circle 4
+        </div>
+    </div>
+</div>
+
+<div class="button">
+    <input type="button" value="Submit">
+</div>
+
+<body>
+
+
+
+</body>
+
+</html>

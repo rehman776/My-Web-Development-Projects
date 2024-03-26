@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        :root{
+            /* --box-color: tomato; */
+            --primary-color: blue;
+            --danger-color: green;
+
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+    
+        }
+
+        .box {
+            border: 5px solid hotpink;
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+            margin: 5px 10px;
+            /* background-color: var(--box-color); */
+            background-color: var(--danger-color);
+            box-shadow: 5px 10px var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="Box1">Box 1</div>
+        <div class="box" id="Box2">Box 2</div>
+        <div class="box" id="Box3">Box 3</div>
+        <div class="box" id="Box4">Box 4</div>
+    </div>
+</body>
+
+</html>

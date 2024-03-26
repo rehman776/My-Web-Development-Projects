@@ -1,0 +1,102 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Logo Styling */
+#logo img {
+    width: 110px;
+    margin: 10px 15px;
+}
+
+/* Navigation Bar List Styling */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #aa2222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: #aa2222;
+    transition: 0.8s;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Responsive Navigation Menu */
+#navbar .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    #navbar .menu-icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}

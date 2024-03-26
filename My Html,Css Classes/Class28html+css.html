@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Tutorial</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 400px;
+            display: flex;
+            /* flex-direction: column; */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: nowrap;
+            justify-content: center;          
+            /* align-items: center; all box in top center and buttom center  */
+            /* justify-content: space-between; */
+            /* justify-content: flex-end; */
+            /* justify-content: baseline; */
+            /* justify-content: center; all box in center up down left right  */
+            /* justify-content: space-around; left and right space thori hai baqi sb same  */
+            /* justify-content: space-evenly; all space braber in the boxes  */
+            align-items: self-end;
+            align-items: stretch;
+            
+
+        }
+
+        .box {
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            padding: 10px;
+            background-color: teal;
+        }
+
+        #box-1 {
+            /* jis dabe ka order zeada ho ga wo end py chala jay ga  */
+            order: 5;
+        }
+
+        #box-2 {
+            order: 15;
+            /* flex-grow: 5; */
+            flex-shrink: 10;
+           
+        }
+/* abd box 3 ka order zeada hai wo en py chala gaya hai  */
+        #box-3 {
+            order: 10;
+            flex-basis: 200px;
+       
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flex Box</h1>
+    <div class="container">
+        <div class="box" id="box-1">First</div>
+        <div class="box" id="box-2">Secound</div>
+        <div class="box" id="box-3">Third</div>
+        <!-- <div class="box" id="box-4">Fourth</div>
+        <div class="box" id="box-5">Fifth</div>
+        <div class="box" id="box-6">Sixth</div> -->
+    </div>
+</body>
+
+</html>

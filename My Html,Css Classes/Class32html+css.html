@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+        /* jb kisi single element ko select krna ho to phr :nth-child() ka use krty hain  */
+        li:nth-child(4){
+            color: blueviolet;
+        }li:nth-child(1){
+            color: rgb(220, 43, 226);
+        }
+        .container {
+            margin: 34px 30px;
+            display: block;
+            width: 100px;
+            margin: auto
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            outline: none;
+            padding: 10px;
+            border: 2px solid teal;
+        }
+/* es selector me bi ham kisi link ky andar elements ko select kr sakty hain  */
+        input[type="password"] {
+            outline: none;
+            padding: 10px;
+            border: 2px solid teal;
+        }
+
+        input[type="submit"] {
+            outline: none;
+            padding: 10px;
+            border: 2px solid teal;
+            margin-left: -9px;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 20px;
+            width: 200px;
+        }
+        a[target]{
+            color: tomato;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://facebook.com" target="_blank">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name"><br>
+            <input type="password" placeholder="Enter your Password"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="itme" id="itme1">itme1</li>
+            <li class="itme" id="itme2">itme2</li>
+            <li class="itme" id="itme3">itme3</li>
+            <li class="itme" id="itme4">itme4</li>
+            <li class="itme" id="itme5">itme5</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

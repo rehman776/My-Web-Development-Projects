@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: teal;
+            padding: 1px 1px;
+            border-radius: 200px;
+            padding-inline-start: 5px;
+        }
+
+        .navbar li {
+            float: left;
+            margin: 0px;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            display: block;
+            
+            margin: auto;
+            list-style: none;
+            overflow: auto;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: Arial;
+        }
+
+        #box {
+            margin-left: 940px;
+            border: 4px solid teal;
+            border-radius: 15px;
+            border: none;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 10px;
+            outline: none;
+            display: block;
+        }
+
+        .gg-search {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 16px;
+            height: 16px;
+            border: 2px solid;
+            border-radius: 100%;
+            margin-left: 1125px;
+            margin-top: -18px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .gg-search::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            border-radius: 3px;
+            width: 2px;
+            height: 8px;
+            background: currentColor;
+            transform: rotate(-45deg);
+            top: 10px;
+            left: 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contect Us</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="ahmad" id="box" placeholder="Search this website">
+                <i class="gg-search"></i>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

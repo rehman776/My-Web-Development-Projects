@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css More Selectors</title>
+    <style>
+        h1 {
+            background-color: teal;
+            color: white;
+            text-align: center;
+        }
+
+        /* div p {
+            background-color: tomato;
+            color: white;
+        } */
+        /* div ul li p{
+            background-color: tomato;
+        } */
+        /* jb bi kisi pare ka pechla child ak div ho to ham ye selector use krty hain  */
+        div+p {
+            background-color: rebeccapurple;
+        }
+        /* jb bi kisi div ky andar drict pare ho target krna ho to ye selector use krty hain  */
+        div > p{
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more Css Selectors</h1>
+    <div class="container">
+        <ul>
+            <p>this is inside of ul para</p>
+            <li>
+                <p>this is inside of li para</p>
+            </li>
+        </ul>
+        <p>This is inside of div para</p>
+    </div>
+    <p>This is outside of div para</p>
+</body>
+
+</html>

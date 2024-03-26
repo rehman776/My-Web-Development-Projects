@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Food Delivery Services in Pakistan | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet" />
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navigation Bar Styling */
+      
+      #navbar {
+        background-color: #2c3e50; /* Dark background color */
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+      #logo {
+        display: block;
+    }
+
+    #logo img {
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+    }
+
+      #logo img:hover {
+        transform: scale(1.1);
+      }
+
+      #navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-right: 20px;
+      }
+
+      #navbar ul li a {
+        float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+      #navbar ul li a:hover {
+        background-color: #FF5F08;
+        transition: 0.8s;
+      }
+
+      #navbar input {
+        margin-left: auto;
+        padding: 5px;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+      }
+
+      #navbar i {
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        color: white;
+      }
+
+
+      /* Home Section */
+      #home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+      }
+
+      #home::before {
+        content: "";
+        background: url('sabzi3.jpg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 94%;
+        width: 100%;
+        z-index: -1;
+        background-color: #000; /* Black */
+  opacity: 0.5; /* Adjusted opacity for a subtle overlay */
+  /* ... existing styles ... */
+      }
+
+      #home p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      #home button {
+        font-size: 1.5rem;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        background-color: #FF5F08;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #home button:hover {
+        background-color: #21303f;
+      }
+      #home h1 {
+        font-size: 3.5rem; /* Larger font size for the hero text */
+        margin-bottom: 20px;
+
+      #home {
+        text-align: center;
+        padding: 120px 20px; /* Improved padding for better visual appeal */
+        color: #fff; /* White text for contrast */
+    }
+
+    }
+
+    #home button {
+        background-color: #FF5F08; /* Use a vibrant color for the button */
+        font-size: 1.8rem;
+        padding: 12px 40px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+
+      /* Services Section */
+      #services {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .services-container{
+        color: white;
+      }
+
+      #services .box {
+        border: 2px solid red;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        background-color: #34495e; /* Dark Slate Gray */
+  /* ... existing styles ... */
+      }
+
+      #services .box img {
+        height: 160px;
+        display: block;
+        margin: auto;
+      }
+
+      .h-primary {
+        font-size: 2.8rem;
+        padding: 12px;
+      }
+
+      .h-secondary {
+        font-size: 2.3rem;
+        padding: 12px;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .box:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+
+      #services .box {
+        padding: 30px;
+        margin: 20px 0;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .h-primary.center,
+    .h-secondary.center {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+
+      /* Media Query for Responsive Design */
+      
+      /* Clients Section Styling */
+#clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+#clients h1{
+  font-size: 50px;
+}
+
+#clients::before{
+  content: "";
+  position: absolute;
+  background:url(clients.png) no-repeat center center/cover;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+}
+
+.h-primary.center {
+  color: #FF5F08;
+  font-size: 2.9rem;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.client-logos img {
+        padding: 0px 100px;
+        margin: 10px;
+        max-width: 350px;
+        filter: grayscale(80%); /* Adjust the grayscale level for a subtle effect */
+        transition: filter 0.3s, transform 0.3s;
+    }
+
+
+    .client-logos img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+
+      /* Contact Section Styling */
+      #contact {
+        
+        background: url(contact.jpg);
+        padding: 50px 0;
+        background-color: #ecf0f1;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .contact-form button:hover{
+        background-color: #21303f;
+      }
+
+
+      .contact-form label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        background-color: #FF5F08;
+        font-size: 1.6rem;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 13px;
+        padding-right: 13px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+      /* Footer Styling */
+      footer {
+        padding: 20px 0;
+        text-align: center;
+        background-color: #2c3e50; /* Dark Navy Blue */
+  color: #fff; /* White */
+  /* ... existing styles ... */
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-logo img {
+        margin-left: 10px;
+        height: 70px;
+        width: auto;
+      }
+
+      .footer-social a {
+        padding: 5px 15px;
+        color: #fff;
+        margin: 0 10px;
+        font-size: 1.5rem;
+      }
+      .footer-social a:hover{
+        color: #FF5F08;
+        transition: 0.8s;
+        
+        
+      }
+
+      .footer-bottom {
+        margin-top: 20px;
+      }
+
+        .parallax {
+            /* New class for parallax effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0;
+        }
+
+        /* Add styles for the testimonials section */
+        #testimonials {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .testimonial {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        /* Add styles for the newsletter section */
+        #newsletter {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        #newsletter h1{
+          color: #FF5F08;
+        }
+
+        #newsletter input {
+            padding: 10px;
+            width: 50%;
+            outline: none;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #FF5F08;
+        }
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 825px) {
+        #navbar ul {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          background-color: #2c3e50;
+          opacity: 0.89;
+          text-align: center;
+          flex-direction:row;
+          position: relative;
+          bottom:5px;
+        }
+          #navbar{
+            height: 103px;
+          }
+          #navbar ul li a{
+            padding-top: 3px;
+            padding-bottom: 3px;
+            
+          }
+            #logo img {
+                float: none;
+                margin: 0 auto;
+                display: block;
+            }
+
+        #navbar ul.active {
+          display: flex;
+        }
+
+        #navbar ul li {
+          margin: 10px 0;
+        }
+
+        #navbar i {
+          display: block;
+          position: relative;
+          left: 12px;
+        }
+
+        #home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        }
+
+        #clients::before{
+  content: "";
+  position: absolute;
+  background:url(clients.png) no-repeat center center/cover;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+}
+#clients {
+  margin-top: -140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+
+#contact {
+        margin-top: -130px;
+        background: url(contact.jpg);
+        padding: 50px 0;
+        background-color: #ecf0f1;
+      }
+      }
+
+      @media only screen and (max-width: 600px) {
+        
+
+        #home {
+          padding: 10px;
+          margin-top: 80px;
+        }
+
+        #clients::before{
+  content: "";
+  position: absolute;
+  background:url(clients.png) no-repeat center center/cover;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+}
+#clients {
+  margin-bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+
+.client-logos img {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+        margin: 10px;
+        max-width: 360px;
+        filter: grayscale(80%);
+        transition: filter 0.3s, transform 0.3s;
+    }
+    #clients h1{
+      font-size: 75px;
+    }
+
+    #services {
+      margin-top: -60px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .services-container{
+        color: white;
+      }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="website logo1.png" alt="MyOnlineMeal.com" />
+      </div>
+      <ul>
+        <li><a href="#navbar">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="navbar-icon">
+      <i class="fa-solid fa-bars"></i></div>
+      <div class="shopingbag">
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome to My Online Meal</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore
+        minus eum voluptatem iure in amet error quis, ut reprehenderit
+        consequatur cumque aperiam beatae asperiores magnam quod deserunt
+        exercitationem quae molestias voluptas saepe laborum.iure in amet error quis, ut reprehenderit
+      </p>
+      <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="pngpizza1.png" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            Lorem ipsum, dolor si t amet consectetur adipisicing elit. Possimus
+            illum quod iste qui numquam, sed voluptates perspiciatis autem
+            quisquam commodi modi, blanditiis rerum maiores facilis voluptatem
+            iusto debitis officiis necessitatibus quos optio eaque hic.
+          </p>
+        </div>
+        <div class="box">
+          <img src="pngpizza2.png" alt="" />
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">
+            Lorem ipsum, dolor si t amet consectetur adipisicing elit. Possimus
+            illum quod iste qui numquam, sed voluptates perspiciatis autem
+            quisquam commodi modi, blanditiis rerum maiores facilis voluptatem
+            iusto debitis officiis necessitatibus quos optio eaque hic.
+          </p>
+        </div>
+        <div class="box">
+          <img src="website logo2.png" alt="" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            Lorem ipsum, dolor si t amet consectetur adipisicing elit. Possimus
+            illum quod iste qui numquam, sed voluptates perspiciatis autem
+            quisquam commodi modi, blanditiis rerum maiores facilis voluptatem
+            iusto debitis officiis necessitatibus quos optio eaque hic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continued... -->
+
+    <!-- Clients Section -->
+    <section id="clients">
+      <h1 class="h-primary center">Our Clients</h1>
+      <div class="client-logos">
+        <img src="logo1.png" alt="Client 1" />
+        <img src="logo2.png" alt="Client 2" />
+        <img src="logo3.png" alt="Client 3" />
+        <img src="logo4.png" alt="Client 3" />
+        <!-- Add more client logos as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    
+  <section id="services" class="services-container">
+      <!-- Existing services section remains unchanged -->
+  </section>
+
+  <!-- Add the testimonials section -->
+  <section id="testimonials">
+      <h1 class="h-primary center">What Our Customers Say</h1>
+      <div class="testimonial">
+          <img src="customer1.jpg" alt="Customer 1">
+          <p>"Great food and quick delivery! My go-to place for online meals."</p>
+          <p>- John Doe</p>
+      </div>
+      <div class="testimonial">
+          <img src="customer2.jpg" alt="Customer 2">
+          <p>"Excellent catering service. They made our event memorable."</p>
+          <p>- Jane Smith</p>
+      </div>
+      <!-- Add more testimonials as needed -->
+  </section>
+
+  <!-- Add the newsletter section -->
+  <section id="newsletter">
+      <h1 class="h-primary center">Subscribe to Our Newsletter</h1>
+      <p>Stay updated with our latest offers and promotions!</p>
+      <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn">Subscribe</button>
+      </form>
+  </section>
+
+  <!-- Your existing HTML content -->
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content center">
+        <div class="footer-logo">
+          <img src="website logo1.png" alt="MyOnlineMeal.com" />
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom center">
+        <p>&copy; 2024 MyOnlineMeal. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("#navbar ul a");
+        const mobileMenu = document.querySelector("#navbar ul");
+        const hamburgerIcon = document.querySelector("#navbar i");
+
+        links.forEach((link) => {
+          link.addEventListener("click", smoothScroll);
+        });
+
+        hamburgerIcon.addEventListener("click", toggleMobileMenu);
+
+        function smoothScroll(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          window.scrollTo({
+            top: targetElement.offsetTop - 80, // Adjusted for navbar height
+            behavior: "smooth",
+          });
+
+          // Hide mobile menu after clicking a link
+          mobileMenu.classList.remove("active");
+        }
+
+        function toggleMobileMenu() {
+          mobileMenu.classList.toggle("active");
+        }
+      });
+    </script>
+  </body>
+</html>

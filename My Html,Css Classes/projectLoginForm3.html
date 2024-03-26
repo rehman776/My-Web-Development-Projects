@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login/Signup Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        /* background-image: url(night.jpg); */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(img/keybord.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        opacity: 0.80;
+      }
+
+      .container {
+        background: rgb(207, 207, 207);
+        border-radius: 17px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 80%; /* Adjusted width for responsiveness */
+        max-width: 400px; /* Set a maximum width */
+        padding: 30px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        color: teal;
+        font-size: 30px;
+        position: relative;
+        bottom: 23px;
+      }
+
+      form {
+        display: block;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInForm 1s forwards;
+      }
+
+      @keyframes fadeInForm {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .pass {
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      input {
+        outline: none;
+        margin: 10px;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+
+      .toggle-btn {
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        color: teal;
+        cursor: pointer;
+      }
+
+      button {
+        padding: 7px 100px;
+        position: relative;
+        top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid rgb(207, 207, 207);
+        border-radius: 25px;
+        color: teal;
+        cursor: pointer;
+        transition: background-color 0.8s, color 0.8s;
+      }
+
+      button:hover {
+        background-color: rgb(4, 112, 112);
+        color: white;
+      }
+
+      .toggle-btn {
+        display: flex;
+        justify-content: right;
+        margin-top: 4px;
+        font-size: 15px;
+      }
+
+      .signup,
+      .login {
+        position: relative;
+        top: 50px;
+        right: 26px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .signup a {
+        position: relative;
+        bottom: 23px;
+        right: 42px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .login a {
+        position: relative;
+        bottom: 23px;
+        right: 37px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+
+      /* Media Query for responsiveness */
+      @media screen and (max-width: 430px) {
+        .container {
+          width: 90%;
+        }
+        .login a {
+          position: relative;
+          right: 23px;
+        }
+        .signup a {
+          position: relative;
+          right: 25px;
+        }
+      }
+      @media screen and (max-width: 375px) {
+        .login a {
+          position: relative;
+          right: 30px;
+        }
+      }
+      @media screen and (max-width: 414px) {
+        .login a {
+          position: relative;
+          right: 35px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Login/Signup</h1>
+
+      <form id="loginForm">
+        <div class="pass">Username</div>
+        <input type="text" id="username" placeholder="Enter Your Username" />
+        <div class="pass">Password</div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+        />
+
+        <button type="button" onclick="login()">Login</button>
+        <div class="signup">
+          Not a member?
+          <a href="#" class="toggle-btn" onclick="toggleForms('signupForm')"
+            >Signup</a
+          >
+        </div>
+      </form>
+
+      <form id="signupForm" style="display: none">
+        <div class="pass">Username</div>
+        <input
+          type="text"
+          id="signupUsername"
+          placeholder="Enter Your Username"
+        />
+        <div class="pass">Password</div>
+        <input
+          type="password"
+          id="signupPassword"
+          placeholder="Enter Your Password"
+        />
+        <div class="pass">Confirm Password</div>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+
+        <button type="button" onclick="signup()">Signup</button>
+        <div class="login">
+          Already a member?
+          <a href="#" class="toggle-btn" onclick="toggleForms('loginForm')"
+            >Login</a
+          >
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function toggleForms(formId) {
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+
+        if (formId === "loginForm") {
+          loginForm.style.display = "block";
+          signupForm.style.display = "none";
+        } else {
+          loginForm.style.display = "none";
+          signupForm.style.display = "block";
+        }
+      }
+
+      function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Add your authentication logic here
+        if (username === "your_username" && password === "your_password") {
+          alert("Login successful!");
+          // Redirect to another page or perform other actions
+        } else {
+          alert("Invalid username or password");
+        }
+      }
+
+      function signup() {
+        var signupUsername = document.getElementById("signupUsername").value;
+        var signupPassword = document.getElementById("signupPassword").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        // Add your signup logic here
+        if (signupPassword === confirmPassword) {
+          alert("Signup successful!");
+          // Redirect to another page or perform other actions
+        } else {
+          alert("Password and Confirm Password do not match");
+        }
+      }
+    </script>
+  </body>
+</html>

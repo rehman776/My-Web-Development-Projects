@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        /* container ki display flex krny sy text ak line me a jata hai  */
+     .container{
+        display: flex;
+     }
+
+     .Card{
+        margin: 10px;
+        /* border: 2px solid red; */
+        padding: 10px;
+        /* box-shadow me pehli value 'x' dusri 'y' or tesri blur radius ki hoti hai or chothi value spred radius ki hoti hai end py color hota hai  */
+        box-shadow: 7px 7px 5px 2px green;
+        background-color: burlywood;
+     }
+     #Card1{
+        text-shadow: 1px 1px 1px #04f8c7;
+     }
+     #Card4{
+        text-shadow: 1px 1px 1px #04f8c7;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Card" id="Card1"><h2>Card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem voluptatem quod explicabo voluptatum libero, labore quasi necessitatibus? Minus asperiores, reprehenderit id porro laboriosam iusto, placeat culpa veniam hic, voluptates quos eveniet dolores molestiae nam eligendi nisi nihil odio pariatur.</p></div>
+        <div class="Card" id="Card2"><h2>Card2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem voluptatem quod explicabo voluptatum libero, labore quasi necessitatibus? Minus asperiores, reprehenderit id porro laboriosam iusto, placeat culpa veniam hic, voluptates quos eveniet dolores molestiae nam eligendi nisi nihil odio pariatur.</p></div>
+        <div class="Card" id="Card3"><h2>Card3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem voluptatem quod explicabo voluptatum libero, labore quasi necessitatibus? Minus asperiores, reprehenderit id porro laboriosam iusto, placeat culpa veniam hic, voluptates quos eveniet dolores molestiae nam eligendi nisi nihil odio pariatur.</p></div>
+        <div class="Card" id="Card4"><h2>Card4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem voluptatem quod explicabo voluptatum libero, labore quasi necessitatibus? Minus asperiores, reprehenderit id porro laboriosam iusto, placeat culpa veniam hic, voluptates quos eveniet dolores molestiae nam eligendi nisi nihil odio pariatur.</p></div>
+    </div>
+</body>
+</html>
