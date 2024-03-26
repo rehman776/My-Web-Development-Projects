@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Segoe UI";
+        font-size: 15px;
+      }
+
+      /* Navigation Bar Styling Start Here  */
+      #logo img {
+        height: 40px;
+        padding: 35px;
+        transition: transform 0.4s ease;
+      }
+      #logo img:hover {
+        transform: scale(1.1);
+      }
+      #navbar {
+        display: flex;
+        height: 76px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f4cc30;
+      }
+      #navlist ul {
+        display: flex;
+        margin-left: 485px;
+      }
+      #navlist ul li {
+        list-style: none;
+        padding: 17px;
+      }
+      #navlist ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 17px;
+        transition: all 0.3s ease;
+      }
+      #navlist ul li a:hover {
+        color: white;
+      }
+      .white {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 76px;
+        width: 255px;
+        background-color: white;
+      }
+      .white h3 {
+        position: relative;
+        bottom: 10px;
+        left: 55px;
+        font-weight: 300;
+      }
+      .white .num {
+        position: relative;
+        top: 12px;
+        left: -40px;
+        font-weight: 900;
+      }
+      .white .call img {
+        position: relative;
+        left: 35px;
+      }
+      /* Navigation Bar Styling End Here  */
+
+      /* Main Section Styling Start Here    */
+      .main-section .down-img {
+        display: flex;
+        justify-content: center;
+      }
+      .down-img img {
+        height: 270px;
+        width: 100%;
+        vertical-align: middle;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 75px;
+        z-index: -1;
+        object-fit: cover;
+      }
+      #upper__text h3 {
+        position: relative;
+        bottom: 200px;
+        left: 180px;
+        color: white;
+        font-weight: 700;
+        font-size: 21px;
+      }
+      /* Main Section Styling End Here    */
+      
+/* Skills Section Styling Start Here */
+
+/* Skills Section Styling End Here */
+
+     /* Footer Section Styling Start Here  */
+      .first .footer__img img {
+        width: 135px;
+      }
+      .footer__bottom {
+        margin-top: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 1.5rem 6rem;
+        gap: 6rem 8rem;
+        font-family: "Segoe UI";
+      }
+      .footer__bottom .first .footer__img {
+        height: 40px;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .footer__bottom .first .first__para {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        max-width: 230px;
+        margin-top: 30px;
+        position: relative;
+        bottom: 11px;
+}
+
+
+/* Contact Section Styling End Here */
+
+     /* Footer Section Styling Start Here  */
+      .first .footer__img img {
+        width: 135px;
+      }
+      .footer__bottom {
+        margin-top: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 1.5rem 6rem;
+        gap: 6rem 8rem;
+        font-family: "Segoe UI";
+      }
+      .footer__bottom .first .footer__img {
+        height: 40px;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .footer__bottom .first .first__para {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        max-width: 230px;
+        margin-top: 30px;
+        position: relative;
+        bottom: 11px;
+      }
+      .footer__bottom .second .heading {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 35px;
+      }
+      .footer__bottom .second ul {
+        margin: 0 !important;
+      }
+      .footer__bottom .second ul li {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 5px 0;
+      }
+      .footer__bottom .third .heading {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .third .text2 {
+        position: relative;
+        bottom: 12px;
+      }
+      .footer__bottom .third .upper {
+        font-size: 1px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+      .footer__bottom .third .upper .upper__icons {
+        height: 15px;
+        margin-right: 1rem;
+      }
+      .footer__bottom .third .upper img {
+        width: 16px;
+        position: relative;
+        right: 30px;
+        top: 20px;
+      }
+      .footer__bottom .third .upper {
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+      .footer__bottom .fourth .heading {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .footer__bottom .fourth .social {
+        display: flex;
+        grid-gap: 0.9rem;
+        height: 28px;
+        margin-top: 30px;
+        gap: 1rem;
+      }
+      .footer__bottom .fourth .social .twitter {
+        height: 10px;
+        margin: 10px 0;
+      }
+      .footer__terms {
+        max-width: 937px;
+        margin: auto;
+      }
+      .footer__terms .dash__border {
+        border: 3px dashed #000;
+        margin: 1rem 0;
+        width: 1040px;
+        position: relative;
+        right: 50px;
+      }
+      .footer__terms .copyring {
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .footer__terms .copy1 {
+        position: relative;
+        right: 50px;
+      }
+      .footer__terms .copy2 {
+        position: relative;
+        left: 58px;
+      }
+      /* Footer Section Styling End Here  */
+
+      /* Media Query Start Here  */
+      @media only screen and (max-width: 768px) {
+        /* Adjustments for navigation bar */
+        #navlist ul {
+          margin-left: 0;
+        }
+        .white {
+          display: none;
+        }
+        /* Adjustments for logo */
+        #logo img {
+          padding: 20px;
+        }
+
+        /* Adjustments for main section */
+        .main-section .down-img img {
+          height: 200px;
+          bottom: 50px;
+        }
+
+        #upper__text h3 {
+          bottom: 160px;
+          left: 50px;
+        }
+
+        .main-section .stroke h2 {
+          font-size: 28px;
+          right: 10px;
+        }
+
+        .para {
+          width: 90%;
+          top: 50px;
+        }
+
+        .para .text p {
+          font-size: 16px;
+          bottom: 10px;
+        }
+
+        .rating__container {
+          margin: 4rem 1rem;
+        }
+
+        .rating__container .rating__body {
+          grid-gap: 2rem 2rem;
+        }
+
+        .footer__bottom {
+          margin-top: 100px;
+          gap: 2rem;
+        }
+      }
+
+      /* For mobile devices */
+      @media only screen and (max-width: 480px) {
+        /* Adjustments for logo */
+        #logo img {
+          height: 30px;
+          padding: 10px;
+        }
+
+        /* Adjustments for navigation links */
+        #navlist ul {
+          display: none;
+        }
+
+        .white {
+          display: none;
+        }
+
+        /* Adjustments for main section */
+        .main-section .down-img img {
+          height: 150px;
+        }
+
+        #upper__text h3 {
+          font-size: 18px;
+          bottom: 130px;
+          left: 20px;
+        }
+
+        .main-section .stroke h2 {
+          font-size: 24px;
+          right: 5px;
+        }
+
+        .para {
+          width: 90%;
+          top: 30px;
+        }
+
+        .para .text p {
+          font-size: 14px;
+          bottom: 5px;
+        }
+
+        .rating__container {
+          margin: 2rem 0.5rem;
+        }
+
+        .rating__container .rating__body {
+          grid-gap: 1.5rem 1rem;
+        }
+
+        .footer__bottom {
+          margin-top: 50px;
+          gap: 1rem;
+        }
+
+        .footer__bottom .first .first__para {
+          max-width: 180px;
+        }
+
+        .footer__terms .dash__border {
+          width: 100%;
+          right: 0;
+        }
+
+        .footer__terms .copyring {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer__terms .copy1,
+        .footer__terms .copy2 {
+          text-align: center;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation Bar Start Here  -->
+      <div id="navbar">
+        <div id="logo">
+          <img src="Assets/PNG/logo (2).png" alt="Main Logo" />
+        </div>
+        <div id="navlist">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experies</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Timeline</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="white">
+          <div class="call">
+            <img src="/Assets/Icons/call.png" alt="Call Icon" />
+          </div>
+          <h3>Available @</h3>
+          <h3 class="num">444.332.1167</h3>
+        </div>
+      </div>
+      <!-- Navigation Bar End Here  -->
+         
+      <!-- Main Section Start Here  -->
+      <div class="main-section">
+        <div class="down-img">
+          <img src="Assets/PNG/down.png" alt="Down Img" />
+        </div>
+        <div id="upper__text">
+          <h3>Home / Contact Us</h3>
+        </div>
+        <!-- Main Section End Here  -->
+
+        <!-- Skills Section Start Here  -->
+<!-- Media Section Start Here  -->
+<div class="media-section">
+  <h2>Media</h2>
+  <div class="media-container">
+    <div class="media-item">
+      <img src="Assets/Images/image1.jpg" alt="Image 1">
+      <h3>Image 1</h3>
+    </div>
+    <div class="media-item">
+      <img src="Assets/Images/image2.jpg" alt="Image 2">
+      <h3>Image 2</h3>
+    </div>
+    <div class="media-item">
+      <img src="Assets/Images/image3.jpg" alt="Image 3">
+      <h3>Image 3</h3>
+    </div>
+  </div>
+</div>
+<!-- Media Section End Here  -->
+
+        <!-- Skills Section End Here  -->
+        
+      <!-- Footer Start Here  -->
+      <div class="footer__bottom">
+        <div class="first">
+          <div class="footer__img">
+            <img src="Assets/PNG/logo.png" alt="">
+          </div>
+          <div class="first__para">
+            Discuss with the tutee the amount of time necessary to complete each
+            part of their task.
+          </div>
+        </div>
+        <div class="second">
+          <div class="heading">Useful Linka</div>
+          <ul>
+            <li>Free Consultation</li>
+            <li>Visit Us</li>
+            <li>Chat with us</li>
+          </ul>
+        </div>
+        <div class="third">
+          <div class="heading">Contact</div>
+          <div class="upper">
+            <img src="Assets/Icons/call.png" alt="" />
+          </div>
+          <div class="text1">444.332.1167</div>
+          <div class="upper">
+            <img src="Assets/Icons/location icon.png" alt="" />
+          </div>
+          <div class="text2">
+            7461 old Harvard Rd. <br />
+            Middleburg, FL 32068
+          </div>
+        </div>
+        <div class="fourth">
+          <div class="heading">Follow Us</div>
+          <div class="social">
+            <img src="Assets/Icons/share icon.png" alt="" />
+            <img src="Assets/Icons/X Icon.png" alt="" />
+            <img src="Assets/Icons/google icon.png" alt="" />
+            <img src="Assets/Icons/youtube icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__terms">
+        <div class="dash__border"></div>
+        <div class="copyring">
+          <div class="copy1">Copyright © 2024. Zahid Ghafoor</div>
+          <div class="copy2">Terms | Privacy Policy</div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End Here  -->
+  </body>
+</html>
